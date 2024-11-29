@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="container bg-white p-8 rounded-lg shadow-lg max-w-md">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Sign In</h1>
+        <div id="error" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <span id="errorMessage" class="block sm:inline"></span>
+        </div>
+        <form id="loginForm" class="space-y-4">
+            <div class="relative">
+                <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                <input type="email" name="email" id="loginEmail" placeholder="Email" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="loginEmail" class="sr-only">Email</label>
+            </div>
+            <div class="relative">
+                <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                <input type="password" name="password" id="loginPassword" placeholder="Password" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="loginPassword" class="sr-only">Password</label>
+            </div>
+            <input type="submit" class="w-full bg-indigo-600 text-white rounded-lg p-3 hover:cursor-pointer hover:bg-indigo-700 transition" value="Sign In">
+        </form>
+        <div class="mt-6 text-center">
+            <p class="text-gray-600">Don't have an account yet?</p>
+            <a href="register.html" class="text-indigo-600 hover:underline">Sign Up</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

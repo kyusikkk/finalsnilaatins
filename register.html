@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="container bg-white p-8 rounded-lg shadow-lg max-w-md">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Register</h1>
+        <form id="registerForm" class="space-y-4">
+            <div class="relative">
+                <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+                <input type="text" name="first_name" id="firstName" placeholder="First Name" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="firstName" class="sr-only">First Name</label>
+            </div>
+            <div class="relative">
+                <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+                <input type="text" name="last_name" id="lastName" placeholder="Last Name" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="lastName" class="sr-only">Last Name</label>
+            </div>
+            <div class="relative">
+                <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                <input type="email" name="email" id="registerEmail" placeholder="Email" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="registerEmail" class="sr-only">Email</label>
+            </div>
+            <div class="relative">
+                <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                <input type="password" name="password" id="registerPassword" placeholder="Password" class="pl-10 w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                <label for="registerPassword" class="sr-only">Password</label>
+            </div>
+            <input type="submit" class="w-full bg-indigo-600 text-white rounded-lg p-3 hover:bg-indigo-700 transition" value="Sign Up">
+        </form>
+        <div class="mt-6 text-center">
+            <p class="text-gray-600">Already Have Account?</p>
+            <a href="login.html" class="text-indigo-600 hover:underline">Sign In</a>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
