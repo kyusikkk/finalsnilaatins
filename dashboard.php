@@ -111,7 +111,7 @@ $items = $result->get_result()->fetch_all(MYSQLI_ASSOC);
                     <input type="number" id="salePrice" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Sale Price" required>
                 </div>
                 <div>
-                    <label for="quantitySold" class="block font-medium">Quantity Sold</label>
+                    <label for="quantitySold" class="block font-medium">Quantity</label>
                     <input type="number" id="quantitySold" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Quantity Sold" required>
                 </div>
             </div>
@@ -128,7 +128,7 @@ $items = $result->get_result()->fetch_all(MYSQLI_ASSOC);
                     <th class="p-3 text-left">Category</th>
                     <th class="p-3 text-left">List Price</th>
                     <th class="p-3 text-left">Sale Price</th>
-                    <th class="p-3 text-left">Quantity Sold</th>
+                    <th class="p-3 text-left">Quantity</th>
                     <th class="p-3 text-left">Total Value</th>
                     <th class="p-3 text-left">Actions</th>
                 </tr>
